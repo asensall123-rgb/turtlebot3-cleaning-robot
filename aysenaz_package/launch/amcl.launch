@@ -1,0 +1,12 @@
+<launch>
+    <!-- Haritayı yükle -->
+    <param name="map_file" value="/home/aysen_ws/src/aysenaz_package/maps/house_map.yaml" />
+
+    <!-- AMCL node'u başlat -->
+    <node name="amcl" pkg="amcl" type="amcl" output="screen">
+        <param name="base_frame_id" value="base_footprint" />
+        <param name="odom_frame_id" value="odom" />
+        <param name="global_frame_id" value="map" />
+        <param name="scan_topic" value="scan" />
+    </node>
+</launch>

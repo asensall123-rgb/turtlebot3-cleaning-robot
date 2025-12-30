@@ -1,0 +1,128 @@
+<?xml version="1.0" ?>
+<sdf version="1.6">
+  <world name="ev_world">
+
+    <!-- Güneş -->
+    <include>
+      <uri>model://sun</uri>
+    </include>
+
+    <!-- Zemin -->
+    <include>
+      <uri>model://ground_plane</uri>
+    </include>
+
+    <!-- TurtleBot3 House (EV) -->
+    <include>
+      <uri>model://turtlebot3_house</uri>
+    </include>
+
+    <!-- ===================== -->
+    <!-- ====== QR KODLAR ===== -->
+    <!-- ===================== -->
+
+    <!-- LIVINGROOM QR -->
+    <model name="livingroom_qr">
+      <static>true</static>
+      <pose>2.03 0.31 0.16 0 1.5708 0</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry>
+            <plane>
+              <normal>0 0 1</normal>
+              <size>0.4 0.4</size>
+            </plane>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://media/materials/scripts</uri>
+              <uri>file://media/materials/textures</uri>
+              <name>Aysenaz/LivingroomQR</name>
+            </script>
+          </material>
+        </visual>
+      </link>
+    </model>
+
+    <!-- KITCHEN QR -->
+    <model name="kitchen_qr">
+      <static>true</static>
+      <pose>6.05 -0.11 0.16 0 1.5708 0</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry>
+            <plane>
+              <normal>0 0 1</normal>
+              <size>0.4 0.4</size>
+            </plane>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://media/materials/scripts</uri>
+              <uri>file://media/materials/textures</uri>
+              <name>Aysenaz/KitchenQR</name>
+            </script>
+          </material>
+        </visual>
+      </link>
+    </model>
+
+    <!-- BEDROOM QR -->
+    <model name="bedroom_qr">
+      <static>true</static>
+      <pose>-5.00 3.54 0.16 0 1.5708 0</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry>
+            <plane>
+              <normal>0 0 1</normal>
+              <size>0.4 0.4</size>
+            </plane>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://media/materials/scripts</uri>
+              <uri>file://media/materials/textures</uri>
+              <name>Aysenaz/BedroomQR</name>
+            </script>
+          </material>
+        </visual>
+      </link>
+    </model>
+
+    <!-- BATHROOM QR -->
+    <model name="bathroom_qr">
+      <static>true</static>
+      <pose>-6.37 1.15 0.16 0 1.5708 0</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry>
+            <plane>
+              <normal>0 0 1</normal>
+              <size>0.4 0.4</size>
+            </plane>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://media/materials/scripts</uri>
+              <uri>file://media/materials/textures</uri>
+              <name>Aysenaz/BathroomQR</name>
+            </script>
+          </material>
+        </visual>
+      </link>
+    </model>
+
+    <!-- Kamera ayarı -->
+    <gui fullscreen="0">
+      <camera name="top_view">
+        <pose>0 0 18 0 1.5708 0</pose>
+        <view_controller>orbit</view_controller>
+      </camera>
+    </gui>
+
+  </world>
+</sdf>
+
+
+

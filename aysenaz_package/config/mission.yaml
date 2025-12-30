@@ -1,0 +1,51 @@
+rooms:
+  - LIVINGROOM
+  - KITCHEN
+  - BEDROOM
+  - BATHROOM
+
+LIVINGROOM:
+  entry_goal:
+    x: 2.03
+    y: 0.31
+    yaw: 0.0
+  qr_expected: "ROOM=LIVINGROOM"
+  cleaning_goals:
+    - {x: 3.96, y: 0.96, yaw: 0.0}
+    - {x: 5.98, y: 2.61, yaw: 0.0}
+    - {x: 3.99, y: 3.96, yaw: 0.0}
+
+KITCHEN:
+  entry_goal:
+    x: 6.05
+    y: -0.11
+    yaw: 0.0
+  qr_expected: "ROOM=KITCHEN"
+  cleaning_goals:
+    - {x: 5.37, y: -2.06, yaw: 0.0}
+    - {x: 6.00, y: -4.08, yaw: 0.0}
+    - {x: 6.65, y: -1.30, yaw: 0.0}
+
+BEDROOM:
+  entry_goal:
+    x: -5.00
+    y: 3.54
+    yaw: 0.0
+  qr_expected: "ROOM=BEDROOM"
+  cleaning_goals:
+    - {x: -6.03, y: 4.10, yaw: 0.0}
+    - {x: -6.58, y: 1.95, yaw: 0.0}
+    - {x: -5.79, y: 2.97, yaw: 0.0}
+
+BATHROOM:
+  entry_goal:
+    x: -6.37
+    y: 1.15
+    yaw: 0.0
+  qr_expected: "ROOM=BATHROOM"
+  cleaning_goals:
+    - {x: -6.82, y: -1.04, yaw: 0.0}
+    - {x: -6.19, y: -3.09, yaw: 0.0}
+    - {x: -5.72, y: -0.67, yaw: 0.0}
+
+

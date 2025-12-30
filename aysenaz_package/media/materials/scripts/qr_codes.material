@@ -1,0 +1,55 @@
+material Aysenaz/LivingroomQR
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        texture livingroom.png
+      }
+    }
+  }
+}
+
+material Aysenaz/KitchenQR
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        texture kitchen.png
+      }
+    }
+  }
+}
+
+material Aysenaz/BedroomQR
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        texture bedroom.png
+      }
+    }
+  }
+}
+
+material Aysenaz/BathroomQR
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        texture bathroom.png
+      }
+    }
+  }
+}
